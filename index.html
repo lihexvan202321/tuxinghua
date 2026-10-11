@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>积木编程游戏工坊 - 下载</title>
+<!-- ↓ 软件启动时会自动读取下面两个 meta 比对版本（发布新版本时请连同页面版本徽章一起修改） -->
+<meta name="app-version" content="v1.0">
+<meta name="app-notes" content="首发版本：十大积木分类、竖列拼接多列并行、16:9/4:3舞台、视频造型、导出网页/EXE。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--bg:#1a1a2e;--panel:#16213e;--panel2:#0f3460;--accent:#e94560;--accent2:#533483;--ok:#2ecc71;--text:#eee;--text2:#aaa;--border:#2a2a4a;}
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:linear-gradient(160deg,var(--bg) 0%,var(--panel2) 55%,#1a1a3a 100%);min-height:100vh;color:var(--text);}
+.wrap{max-width:960px;margin:0 auto;padding:28px 20px 60px;}
+/* 顶部 */
+header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:36px;}
+.logo{font-size:26px;font-weight:bold;background:linear-gradient(135deg,var(--accent),#ffb86c);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.badge{display:inline-block;padding:4px 14px;border-radius:20px;background:linear-gradient(135deg,var(--ok),#27ae60);color:#fff;font-size:13px;font-weight:bold;box-shadow:0 2px 12px rgba(46,204,113,.35);}
+.hint{font-size:12px;color:var(--text2);}
+/* Hero */
+.hero{text-align:center;padding:34px 16px 40px;border-radius:18px;background:rgba(22,33,62,.55);border:1px solid var(--border);box-shadow:0 12px 40px rgba(0,0,0,.35);backdrop-filter:blur(4px);}
+.hero h1{font-size:34px;margin-bottom:10px;text-shadow:0 2px 18px rgba(233,69,96,.35);}
+.hero p.intro{color:var(--text2);font-size:15px;line-height:1.9;max-width:620px;margin:0 auto 26px;}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 46px;font-size:18px;font-weight:bold;color:#fff;text-decoration:none;border-radius:12px;background:linear-gradient(135deg,#2ecc71,#27ae60);box-shadow:0 8px 26px rgba(46,204,113,.4);transition:transform .15s,box-shadow .15s;}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(46,204,113,.55);}
+.btn small{font-size:12px;font-weight:normal;opacity:.85;}
+.sys{margin-top:16px;font-size:12px;color:var(--text2);}
+/* 功能卡片 */
+h2.sec{margin:44px 0 18px;font-size:20px;border-left:4px solid var(--accent);padding-left:12px;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+.card{background:rgba(22,33,62,.65);border:1px solid var(--border);border-radius:14px;padding:20px;transition:transform .15s,border-color .15s;}
+.card:hover{transform:translateY(-4px);border-color:var(--accent);}
+.card .ico{font-size:30px;margin-bottom:10px;}
+.card b{display:block;font-size:15px;margin-bottom:8px;}
+.card p{font-size:13px;color:var(--text2);line-height:1.8;}
+/* 更新日志 */
+.logs{background:rgba(22,33,62,.65);border:1px solid var(--border);border-radius:14px;padding:22px 26px;}
+.log{display:flex;gap:14px;padding:12px 0;border-bottom:1px dashed var(--border);}
+.log:last-child{border-bottom:none;}
+.log .ver{flex-shrink:0;font-weight:bold;color:var(--ok);min-width:52px;}
+.log .txt{font-size:13px;color:var(--text2);line-height:1.8;}
+footer{margin-top:46px;text-align:center;font-size:12px;color:var(--text2);line-height:2;}
+footer code{background:#0f3460;padding:2px 8px;border-radius:4px;}
+@media (max-width:600px){ .hero h1{font-size:26px;} .wrap{padding:18px 14px 40px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="logo">🧩 积木编程游戏工坊</span>
+    <span class="badge" id="verBadge">v1.0 最新版</span>
+    <span class="hint">软件启动时会自动检查本页版本</span>
+  </header>
+
+  <section class="hero">
+    <h1>像搭积木一样做游戏</h1>
+    <p class="intro">面向初学者的可视化编程工具：从左侧积木库把积木拖进脚本区，上下拼接成竖列，点击「运行」立即看到效果。不用写一行代码，就能做出自己的小游戏，还能一键导出独立网页或EXE分享给朋友。</p>
+    <a class="btn" href="./%E7%A7%AF%E6%9C%A8%E7%BC%96%E7%A8%8B%E6%B8%B8%E6%88%8F%E5%B7%A5%E5%9D%8A.exe" download="积木编程游戏工坊.exe">⬇ 下载 Windows 版 <small>约 9MB · 绿色单文件</small></a>
+    <div class="sys">系统要求：Windows 10 / 11 · 双击即用，无需安装 · 界面使用系统自带组件渲染</div>
+  </section>
+
+  <h2 class="sec">✨ 功能特色</h2>
+  <div class="cards">
+    <div class="card"><div class="ico">🧱</div><b>十大积木分类</b><p>控制、动作、外观、声音、画笔、侦测、运算、变量、列表、函数——每块积木自带中文用法说明，拖到脚本区就会用。</p></div>
+    <div class="card"><div class="ico">📚</div><b>竖列拼接 · 多列并行</b><p>积木上下咬合成竖列，「当…」帽子积木自动开启新列，一个角色可同时挂多条竖列，运行时并行执行互不干扰。</p></div>
+    <div class="card"><div class="ico">🖥</div><b>舞台 16:9 / 4:3 可选</b><p>舞台比例一键切换，适配横版闯关或经典构图；比例随项目一起保存和导出。</p></div>
+    <div class="card"><div class="ico">🎬</div><b>图片 / 视频 造型</b><p>角色造型可以是图片，也可以是循环播放的视频；批量导入素材，舞台积木还能控制视频播放暂停。</p></div>
+    <div class="card"><div class="ico">📤</div><b>导出网页 / EXE</b><p>「导出网页」生成双击即玩的自包含HTML；「导出EXE」附打包脚本，按指引几步得到独立exe。</p></div>
+    <div class="card"><div class="ico">💾</div><b>项目随时存取</b><p>整个项目（角色、脚本、素材、舞台设置）保存为一个 .mgproj 文件，换电脑也能继续做。</p></div>
+  </div>
+
+  <h2 class="sec">📝 更新日志</h2>
+  <div class="logs">
+    <div class="log"><span class="ver">v1.0</span><span class="txt">首发版本：十大积木分类（含独立「变量」类）、竖列拼接多列并行、舞台 16:9/4:3 比例、视频造型、画笔/侦测/函数等 120+ 积木、导出网页与 EXE。</span></div>
+  </div>
+
+  <footer>
+    本页即软件的更新数据源 · 软件名：<code>积木编程游戏工坊.exe</code><br>
+    © 2026 积木编程游戏工坊 · 在 GitHub Pages 上托管
+  </footer>
+
+</div>
+</body>
+</html>
